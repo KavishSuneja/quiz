@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bg{
+    width: 100%;
+    height: 800px;
+}
+
+nav{
+    border: 1px solid red;
+    height: 60px;
+    background-color: #F14C38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.micro-soft{
+    border: 1px solid red;
+    float: left;
+    position: absolute;
+    left: 100px;
+    
+    /* FONTS */
+
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fefefe;
+}
+
+.micro-logo{
+    border: px solid white;
+    height: 70%;
+    margin-left: 0%;
+    position: absolute;
+    left: 50px;
+
+}
+nav ul{
+    border: px solid white;
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-start;
+    list-style: none;
+}
+
+nav ul li a{
+    border: px solid red;
+
+    /* FONTS */
+
+    font-family: 'Monda',sans-serif;
+    font-weight: 400;
+    color: #fefefe;
+    text-decoration: none;
+    
+}
+
+.onpa{
+    font-weight: 700;
+}
+.check-menu{
+    display: none;
+}
+
+.fa-bars{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu-bg{
+        width: 100%;
+        height: 800px;
+    }
+    
+    nav{
+        border: px solid red;
+        height: 60px;
+        background-color: #F14C38;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        position: relative;
+    }
+    
+    .micro-soft{
+        border: 1px solid red;
+        float: left;
+        position: absolute;
+        left: 7%;
+        
+        /* FONTS */
+    
+        font-family: 'Poppins',sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fefefe;
+    }
+    
+    .micro-logo{
+        border: px solid white;
+        height: 70%;
+        position: absolute;
+        left: 10px;
+        margin-left: 0%;
+    
+    }
+    nav ul{
+        border: px solid red;
+        width: 80%;
+        background-color: #F14C38;
+        height: 100vh;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        float: right;
+        margin-right: 0%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        align-self: flex-start;
+        flex-direction: column;
+        list-style: none;
+        transition: 0.7s ease-in-out;
+    }
+    
+    nav ul li{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    nav ul li a{
+        border: px solid red;
+        display: block;
+        padding: 22px 50px;
+    
+        /* FONTS */
+    
+        font-family: 'Monda',sans-serif;
+        font-weight: 400;
+        color: #fefefe;
+        text-decoration: none;
+        
+    }
+    
+    .onpa{
+        font-weight: 700;
+    }
+
+    .check-menu:checked ~ ul{
+        left: -1px;
+    }
+
+    .fa-bars{
+        border: px solid white;
+        position: absolute;
+        right: 10px;
+        font-size: 30px;
+        line-height: 0px;
+        color: #fefefe;
+    }
+    
+}
+
+@media  screen and (min-width:701px) and (max-width:900px) {
+    .menu-bg{
+        width: 100%;
+        height: 800px;
+    }
+    
+    nav{
+        border: 1px solid red;
+        height: 60px;
+        background-color: #F14C38;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .micro-soft{
+        border: 1px solid red;
+        float: left;
+        position: absolute;
+        left: 80px;
+        
+        /* FONTS */
+    
+        font-family: 'Poppins',sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fefefe;
+    }
+    
+    .micro-logo{
+        border: px solid white;
+        height: 70%;
+        margin-left: 0%;
+        position: absolute;
+        left: 20px;
+    
+    }
+    nav ul{
+        border: px solid white;
+        width: 40%;
+        height: 100%;
+        float: right;
+        margin-right: 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: flex-start;
+        list-style: none;
+    }
+    
+    nav ul li a{
+        border: px solid red;
+    
+        /* FONTS */
+    
+        font-family: 'Monda',sans-serif;
+        font-weight: 400;
+        color: #fefefe;
+        text-decoration: none;
+        
+    }
+    
+    .onpa{
+        font-weight: 700;
+    }
+    .check-menu{
+        display: none;
+    }
+       
+}
