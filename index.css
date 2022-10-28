@@ -70,7 +70,7 @@ nav ul li a{
 .onpa{
     font-weight: 700;
 }
-.check-menu{
+.check-menu,.fa-bars{
     display: none;
 }
 
