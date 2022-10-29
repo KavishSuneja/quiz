@@ -24,7 +24,7 @@ nav{
     border: px solid red;
     float: left;
     position: absolute;
-    left: 100px;
+    left: 110px;
     
     /* FONTS */
 
@@ -36,7 +36,7 @@ nav{
 
 .micro-logo{
     border: px solid white;
-    height: 70%;
+    height: 100%;
     margin-left: 0%;
     position: absolute;
     left: 50px;
@@ -65,6 +65,10 @@ nav ul li a{
     color: #fefefe;
     text-decoration: none;
     
+}
+
+nav ul li a:hover{
+    color: gray;
 }
 
 .onpa{
