@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600&family=Roboto:wght@100;300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Roboto:wght@100;300;400;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +17,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    z-index: 100;
     width: 100%;
 }
 
@@ -25,7 +25,7 @@ nav{
     border: px solid red;
     float: left;
     position: absolute;
-    left: 110px;
+    left: 150px;
     
     /* FONTS */
 
@@ -40,7 +40,7 @@ nav{
     height: 100%;
     margin-left: 0%;
     position: absolute;
-    left: 50px;
+    left: 90px;
 
 }
 nav ul{
@@ -84,11 +84,81 @@ nav ul li a:hover{
 }
 
 .landing{
-    border: 1px solid red;
-    background: url("images/home\ page\ bg.png");
-    background-size: cover;
+    border: px solid red;
     width: 100%;
-    height: 700px;
+    height: 900px;
+    position: relative;
+}
+.landing-mb{
+    border: px solid red;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    display: none;
+}
+
+.box1{
+    border: px solid red;
+    height: 120px;
+    width: 120px;
+    background-color: #F14C38;
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}
+
+.quote{
+    border: px solid red;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 30%;
+
+
+    /* FONTS */
+
+    font-family: 'Raleway',sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #FEFEFE;
+}
+
+
+.quote2{
+    border: px solid red;
+    position: absolute;
+    top: 340px;
+    left: 100px;
+    width: 25%;
+    line-height: 22px;
+
+
+    /* FONTS */
+
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FEFEFE;
+}
+
+.slider{
+    border: px solid white;
+    position: absolute;
+    top: 140px ;
+    right: 100px;
+    width: 40%;
+    height: 500px;
+}
+
+.slider-h-w{
+    height: 100%;
+    width: 100%;
+}
+
+.slider-images{
+    height: 500px;
+    width: 100%;
 }
 
 @media screen and (max-width:700px) {
@@ -106,11 +176,11 @@ nav ul li a:hover{
         border: px solid red;
         height: 60px;
         width: 100%;
-        background-color: #F14C38;
+        background-color: transparent;
+        position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        position: relative;
     }
     
     .micro-soft{
@@ -185,10 +255,6 @@ nav ul li a:hover{
 
     .fa-solid.fa-bars{
         display: block;
-    }
-
-    .fa-bars{
-        display: block;
         border: px solid white;
         position: absolute;
         right: 10px;
@@ -196,6 +262,92 @@ nav ul li a:hover{
         line-height: 0px;
         color: #fefefe;
         
+    }
+
+
+    .landing{
+        border: 1px solid red;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        display: none;
+    }
+
+    .landing-mb{
+        display: initial;
+        border: px solid red;
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+    
+    .box1{
+        border: px solid red;
+        height: 90px;
+        width: 90px;
+        background-color: #F14C38;
+        position: absolute;
+        top: 580px;
+        left: 50px;
+    }
+    
+    .quote{
+        border: px solid red;
+        position: absolute;
+        top: 380px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+    
+    
+        /* FONTS */
+    
+        font-family: 'Raleway',sans-serif;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 37px;
+        color: #FEFEFE;
+    }
+    
+    
+    .quote2{
+        border: px solid red;
+        position: absolute;
+        top: 340px;
+        left: 100px;
+        width: 25%;
+        line-height: 22px;
+        display: none;
+    
+    
+        /* FONTS */
+    
+        font-family: 'Raleway',sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FEFEFE;
+    }
+    
+    .slider{
+        border: 0px solid white;
+        position: absolute;
+        top: 60px ;
+        right: 0px;
+        width: 90%;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .slider-h-w{
+        height: 100%;
+        width: 90%;
+        border: px solid red;
+    }
+    
+    .slider-images{
+        height: 300px;
+        width: 100%;
     }
     
 }
