@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    border: px solid black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+#rst-container{
+    background-color: #f14c38;
+    border-radius: 30px;
+    width: 60vw;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.3);
+    
+
+}
+
+.fa-xmark{
+    font-size:40px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+.heading{
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    margin: 0px auto;
+
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+
+}
+
+#rst-mainbox{
+    width: 65%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border: px solid green;
+    position: relative;
+    top: 140px;
+}
+
+.circle1,.circle2{
+    border: 15px solid white;
+    width: 200px;
+    height: 100%;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sc-rm{
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.sc-scr{
+    text-align: center;
+    width: 100%; 
+    font-family: 'Poppins',sans-serif;   
+    font-size: 26px;
+    font-weight: 600;
+
+}
+.user{
+    position: absolute;
+    top: 80%;
+    border: px solid red;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.perf{
+    position: absolute;
+    top: 70%;
+    font-family: 'Kanit',sans-serif;
+}
+
+@media screen and (max-width: 700px){
+    #rst-container{
+        background-color: #f14c38;
+        border-radius: 30px;
+        width: 90%;
+        height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.3);
+        
+    
+    }
+    
+    .fa-xmark{
+        font-size: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    
+    .heading{
+        font-size: 30px;
+        position: absolute;
+        top: 50px;
+        margin: 0px auto;
+    
+        /* FONTS */
+        font-family: 'Raleway',sans-serif;
+        font-weight: 700;
+    
+    }
+    
+    #rst-mainbox{
+        width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        border: px solid green;
+        position: relative;
+        top: 140px;
+    }
+    
+    .circle1,.circle2{
+        border: 10px solid white;
+        width: 120px;
+        height: 120px;
+        border-radius:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .sc-rm{
+        text-align: center;
+        width: 100%;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    
+    .sc-scr{
+        text-align: center;
+        width: 100%; 
+        font-family: 'Poppins',sans-serif;   
+        font-size: 18px;
+        font-weight: 600;
+    
+    }
+    .user{
+        position: absolute;
+        top: 80%;
+        border: px solid red;
+        font-family: 'Raleway',sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    
+    }
+    
+    .perf{
+        position: absolute;
+        top: 70%;
+        font-family: 'Kanit',sans-serif;
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width:701px) and (max-width:1000px) {
+    
+    #rst-container{
+        background-color: #f14c38;
+        border-radius: 30px;
+        width: 70vw;
+        height: 600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.3);
+        
+    
+    }
+    
+    .fa-xmark{
+        font-size:40px;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    
+    
+    .heading{
+        font-size: 50px;
+        position: absolute;
+        top: 30px;
+        margin: 0px auto;
+    
+        /* FONTS */
+        font-family: 'Raleway',sans-serif;
+        font-weight: 700;
+    
+    }
+    
+    #rst-mainbox{
+        width: 80%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        border: px solid green;
+        position: relative;
+        top: 140px;
+    }
+    
+    .circle1,.circle2{
+        border: 15px solid white;
+        width: 180px;
+        height: 180px;
+        border-radius:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .sc-rm{
+        text-align: center;
+        width: 100%;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 600;
+        font-size: 34px;
+    }
+    
+    .sc-scr{
+        text-align: center;
+        width: 100%; 
+        font-family: 'Poppins',sans-serif;   
+        font-size: 26px;
+        font-weight: 600;
+    
+    }
+    .user{
+        position: absolute;
+        top: 80%;
+        border: px solid red;
+        font-family: 'Raleway',sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    
+    }
+    
+    .perf{
+        position: absolute;
+        top: 70%;
+        font-family: 'Kanit',sans-serif;
+    }
+}

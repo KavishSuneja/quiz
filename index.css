@@ -161,6 +161,77 @@ nav ul li a:hover{
     width: 100%;
 }
 
+.start-quiz{
+    border: 1px solid red;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: url(images/bgimg.jpg),rgba(0,0,0,.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.startquiz-section{
+    border: 1px solid beige;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.heading-start{
+    border: px solid red;
+    width: 30%;
+    position: relative;
+    top: 80px;
+    left: 50px;
+    /* fonts */
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    color: #fefefe;
+}
+
+.heading-select{
+    border: px solid red;
+    width: 80%;
+    position: relative;
+    top: 120px;
+    left: 51px;
+
+        /* fonts */
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #fefefe;
+}
+
+.levels{
+    border: 1px solid black;
+    width: 65%;
+    height: 90%;
+    float: right;
+    margin-right: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+.card-level{
+    border: 1px solid red;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
 @media screen and (max-width:700px) {
     *{
         margin: 0;
@@ -422,4 +493,82 @@ nav ul li a:hover{
         display: none;
     }
        
+    .landing{
+        border: px solid red;
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: initial;
+    }
+    .landing-mb{
+        border: px solid red;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: none;
+    }
+    
+    .box1{
+        border: px solid red;
+        height: 120px;
+        width: 120px;
+        background-color: #F14C38;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+    }
+    
+    .quote{
+        border: px solid red;
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 50%;
+    
+    
+        /* FONTS */
+    
+        font-family: 'Raleway',sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #FEFEFE;
+    }
+    
+    
+    .quote2{
+        border: px solid red;
+        position: absolute;
+        top: 320px;
+        left: 50px;
+        width: 40%;
+        line-height: 22px;
+    
+    
+        /* FONTS */
+    
+        font-family: 'Raleway',sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FEFEFE;
+    }
+    
+    .slider{
+        border: px solid white;
+        position: absolute;
+        top: 120px ;
+        right: 0px;
+        width: 50%;
+        height: 400px;
+    }
+    
+    .slider-h-w{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .slider-images{
+        height: 500px;
+        width: 100%;
+    }
 }
