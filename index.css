@@ -2,7 +2,10 @@
 *{
     margin: 0;
     padding: 0;
+    border: px solid red;
 }
+
+/* Menu Bar */
 
 .menu-bg{
     width: 100%;
@@ -83,6 +86,7 @@ nav ul li a:hover{
     display: none;
 }
 
+/* Landing Page */
 .landing{
     border: px solid red;
     width: 100%;
@@ -161,6 +165,7 @@ nav ul li a:hover{
     width: 100%;
 }
 
+/* Start Quiz Section */
 .start-quiz{
     border: px solid red;
     height: 400px;
@@ -480,8 +485,9 @@ nav ul li a:hover{
     
     
 .start-quiz{
-    border: px solid red;
+    border: px solid black;
     height: 600px;
+    position: relative;
     margin-top: 180px;
     margin-bottom: 50px;
     display: flex;
@@ -496,10 +502,12 @@ nav ul li a:hover{
 }
 
 .startquiz-section{
-    border: px solid beige;
+    border: px solid blue;
     width: 100%;
     height: 100%;
     position: absolute;
+    top: -120px;
+
     float: left;
 }
 
@@ -507,7 +515,7 @@ nav ul li a:hover{
     border: px solid red;
     width: 100%;
     position: relative;
-    top: 5px;
+    top: 0px;
     left: 0px;
     text-align: center;
     /* fonts */
@@ -522,7 +530,7 @@ nav ul li a:hover{
     border: px solid red;
     width: 100%;
     position: relative;
-    top: -2px;
+    top: 0px;
     text-align: center;
     left: 0px;
 
@@ -760,6 +768,124 @@ nav ul li a:hover{
         height: 500px;
         width: 100%;
     }
+
+    /* Start Quiz Section */
+.start-quiz{
+    border: px solid red;
+    height: 400px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: url(images/bgimg.jpg),rgba(0,0,0,.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.startquiz-section{
+    border: px solid blue;
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: -120px;
+}
+
+.heading-start{
+    border: px solid red;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    /* fonts */
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    color: #F14C38;
+}
+
+.heading-select{
+    border: px solid red;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+
+        /* fonts */
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #F14C38;
+}
+
+.levels{
+    border: px solid black;
+    width: 90%;
+    height: 80%;
+    float: right;
+    margin-right: 0%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+.card-level{
+    border: px solid red;
+    background-color: #fefefe;
+    border-radius: 0px;
+    position: relative;
+}
+
+.card-level .logo{
+    border: px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #F14C38;
+    transition: 0.4s ease-in-out;
+    
+
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FEFEFE;
+}
+
+.card-level .difficulty{
+    border: px solid red;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    width: 100%;
+    transition: 0.s ease-in-out;
+    
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #F14C38;
+}
+
 }
 
 .about{
