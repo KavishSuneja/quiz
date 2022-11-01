@@ -162,7 +162,7 @@ nav ul li a:hover{
 }
 
 .start-quiz{
-    border: 1px solid red;
+    border: px solid red;
     height: 400px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -178,7 +178,7 @@ nav ul li a:hover{
 }
 
 .startquiz-section{
-    border: 1px solid beige;
+    border: px solid beige;
     width: 25%;
     height: 100%;
     float: left;
@@ -214,11 +214,11 @@ nav ul li a:hover{
 }
 
 .levels{
-    border: 1px solid black;
-    width: 65%;
-    height: 90%;
+    border: px solid black;
+    width: 55%;
+    height: 80%;
     float: right;
-    margin-right: 50px;
+    margin-right: 8%;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -228,9 +228,66 @@ nav ul li a:hover{
 }
 
 .card-level{
-    border: 1px solid red;
+    border: px solid red;
     background-color: #fefefe;
-    border-radius: 10px;
+    border-radius: 0px;
+    position: relative;
+}
+
+.card-level .logo{
+    border: px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #F14C38;
+    transition: 0.4s ease-in-out;
+    
+
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FEFEFE;
+}
+
+.card-level .difficulty{
+    border: px solid red;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    width: 100%;
+    transition: 0.s ease-in-out;
+    
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #F14C38;
+}
+
+.card-level:hover .difficulty{
+    color: #1F5EAB;
+
+}
+
+
+.card-level:hover .logo{
+    background-color: #1F5EAB;
+
+}
+
+
+.card-level:hover{
+    border: 2px solid #1F5EAB;
+    border-radius: 4px;
+
 }
 @media screen and (max-width:700px) {
     *{
@@ -337,7 +394,7 @@ nav ul li a:hover{
 
 
     .landing{
-        border: 1px solid red;
+        border: px solid red;
         width: 100%;
         height: 500px;
         position: relative;
@@ -421,6 +478,138 @@ nav ul li a:hover{
         width: 100%;
     }
     
+    
+.start-quiz{
+    border: px solid red;
+    height: 600px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: url(images/bgimg.jpg),rgba(0,0,0,.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.startquiz-section{
+    border: px solid beige;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+}
+
+.heading-start{
+    border: px solid red;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    text-align: center;
+    /* fonts */
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #F14C38;
+}
+
+.heading-select{
+    border: px solid red;
+    width: 100%;
+    position: relative;
+    top: -2px;
+    text-align: center;
+    left: 0px;
+
+        /* fonts */
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #F14C38;
+}
+
+.levels{
+    border: px solid black;
+    width: 95%;
+    height: 90%;
+    float: initial;
+    margin-right: 0%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+.card-level{
+    border: px solid red;
+    background-color: #fefefe;
+    border-radius: 0px;
+    position: relative;
+}
+
+.card-level .logo{
+    border: px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 45%;
+    background-color: #F14C38;
+    transition: 0.4s ease-in-out;
+    
+
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FEFEFE;
+}
+
+.card-level .difficulty{
+    border: px solid red;
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    width: 100%;
+    transition: 0.s ease-in-out;
+    
+    /* FONTS */
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #F14C38;
+}
+
+.card-level:hover .difficulty{
+    color: #1F5EAB;
+
+}
+
+
+.card-level:hover .logo{
+    background-color: #1F5EAB;
+
+}
+
+
+.card-level:hover{
+    border: 2px solid #1F5EAB;
+    border-radius: 4px;
+
+}
 }
 
 @media  screen and (min-width:701px) and (max-width:900px) {
