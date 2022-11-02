@@ -92,6 +92,33 @@
 
       </div>
 
+      <!-- Countdown section -->
+
+      <div class="countdown"> 
+        
+         <div class="count-sec">
+          <span class="num" data-val="312">000</span>
+
+          <span class="name-of-perosonal">All Teachers</span>
+        </div>
+        
+        <div class="count-sec">
+          <span class="num" data-val="512">000</span>
+          <span class="name-of-perosonal">All Students</span>
+        </div>
+        
+        <div class="count-sec">
+          <span class="num" data-val="214">000</span>
+          <span class="name-of-perosonal">Online Students</span>
+        </div>
+        
+        <div class="count-sec">
+          <span class="num" data-val="69">000</span>
+          <span class="name-of-perosonal">Offline Students</span>
+        </div> 
+      </div>
+
+
 <!-- About us -->
       <div class="about">
         <div class="about-img">
@@ -102,7 +129,7 @@
             <hr><h4>About Us</h4>
           </div>
         </div>
-      </div>
+      </div> 
 
 
 
@@ -143,6 +170,27 @@
           <h3>© 2022 Team Microsoft . All Rights Reserved.</h3>
         </div>
     </div> 
+
+    <!-- Countdown Js -->
+    <script>
+      let valueDisplays = document.querySelectorAll(".num");
+      let interval = 1000;
+
+      valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor( interval / endValue);
+        let counter = setInterval(function () {
+          startValue += 1;
+          valueDisplay.innerHTML = startValue;
+          if(startValue == endValue){
+            clearInterval(counter);
+          }
+        }, duration ); 
+      });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>

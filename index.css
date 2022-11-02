@@ -170,7 +170,8 @@ nav ul li a:hover{
     border: px solid red;
     height: 400px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -183,10 +184,12 @@ nav ul li a:hover{
 }
 
 .startquiz-section{
-    border: px solid beige;
+    border: 1px solid beige;
     width: 25%;
     height: 100%;
     float: left;
+    position: absolute;
+    left: 50px;
 }
 
 .heading-start{
@@ -223,7 +226,8 @@ nav ul li a:hover{
     width: 55%;
     height: 80%;
     float: right;
-    margin-right: 8%;
+    position: absolute;
+    right: 8%;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -293,6 +297,48 @@ nav ul li a:hover{
     border: 2px solid #1F5EAB;
     border-radius: 4px;
 
+}
+
+/* Countdown Section */
+
+.countdown{
+    border: px solid red;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    background: url("images/NUMBER.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.count-sec{
+    border: px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num{
+    /* border-bottom: 3px solid #fefefe; */
+
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fefefe;
+}
+.name-of-perosonal{
+    border-top: 3px solid #FEFEFE;
+    
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FEFEFE;
 }
 @media screen and (max-width:700px) {
     *{
@@ -489,7 +535,7 @@ nav ul li a:hover{
     height: 600px;
     position: relative;
     margin-top: 180px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -507,7 +553,8 @@ nav ul li a:hover{
     height: 100%;
     position: absolute;
     top: -120px;
-
+    left: 50%;
+    transform: translate(-50%);
     float: left;
 }
 
@@ -548,6 +595,8 @@ nav ul li a:hover{
     height: 90%;
     float: initial;
     margin-right: 0%;
+    left: 50%;
+    transform: translate(-50%);
 
     display: grid;
     grid-template-columns: 1fr;
@@ -617,6 +666,50 @@ nav ul li a:hover{
     border: 2px solid #1F5EAB;
     border-radius: 4px;
 
+}
+
+
+/* Countdown Section */
+
+.countdown{
+    border: px solid red;
+    margin-top: 15px;
+    width: 100%;
+    height: 250px;
+    background: url("images/NUMBER.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.count-sec{
+    border: px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num{
+    /* border-bottom: 3px solid #fefefe; */
+
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fefefe;
+}
+.name-of-perosonal{
+    border-top: 3px solid #FEFEFE;
+    text-align: center;
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FEFEFE;
 }
 }
 
@@ -774,7 +867,7 @@ nav ul li a:hover{
     border: px solid red;
     height: 400px;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
     display: flex;
     align-items: center;
@@ -794,6 +887,8 @@ nav ul li a:hover{
     float: left;
     position: absolute;
     top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .heading-start{
@@ -828,12 +923,12 @@ nav ul li a:hover{
 }
 
 .levels{
-    border: px solid black;
+    border: 2px solid black;
     width: 90%;
     height: 80%;
     float: right;
-    margin-right: 0%;
-
+    left: 50%;
+    transform: translateX(-50%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -884,6 +979,49 @@ nav ul li a:hover{
     font-weight: 700;
     font-size: 30px;
     color: #F14C38;
+}
+
+
+/* Countdown Section */
+
+.countdown{
+    border: px solid red;
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    background: url("images/NUMBER.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.count-sec{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num{
+    /* border-bottom: 3px solid #fefefe; */
+
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fefefe;
+}
+.name-of-perosonal{
+    border-top: 3px solid #FEFEFE;
+    
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FEFEFE;
 }
 
 }
