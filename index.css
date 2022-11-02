@@ -1026,27 +1026,7 @@ nav ul li a:hover{
 
 }
 
-.about{
-    border: 3px solid black;
-    height: auto;
-    display: flex;
-     justify-content: center;
-   align-items: center;
 
-}
-.about-img{
-    height: auto;
-    /* padding: 10px; */
-    border: 3px solid black;
-}
-.about-img img{
-    height: 400px;
-}
-.about-content{
-    border: 3px solid black;
-    height: auto;
-   
-}
 .head{
     /* display: flex; */
     align-items: left;
@@ -1484,3 +1464,93 @@ nav ul li a:hover{
         font-size: 15px;
       }
   }
+
+
+
+
+
+  .about{
+    /* border: 3px solid black; */
+    height: auto;
+    display: grid;
+     justify-content: center;
+   align-items: center;
+grid-template-columns: 1fr 1fr;
+}
+.about-img{
+    height: auto;
+    /* padding: 10px; */
+    /* border: 3px solid black; */
+}
+.about-img img{
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.about-content{
+    /* border: 3px solid black; */
+    height: auto;
+   
+} 
+.about-content hr{
+    background-color: #F14C38;
+    height: 4px;
+    width:80px;
+    border-radius: 30px;
+    opacity: 1;
+    border: none;
+} 
+.about-content .head{
+    display: flex;
+    /* height: 200px; */
+}
+.about-content .head h4{
+    color: #556172;
+    /* border: 3px solid black; */
+    font-size: 18px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.about-content h1{
+    width: 400px;
+    color: #1F5EAB;
+}
+.about-content p{
+    width: 90%;
+    font-size: 14px;
+    line-height: 15px;
+}
+.about-content img{
+    width:24px;
+    height:24px;
+    /* border: 3px solid black; */
+}
+.about-content h6{
+    /* border: 3px solid black; */
+    margin-left: 4px;
+
+}
+.quality{
+    display: flex;
+    /* border: 3px solid black; */
+    margin-bottom: 10px;
+}
+
+.button{
+    margin-top: 30px;
+    color: white;
+    background-color: #F14C38;
+    text-decoration: none;
+    font-size:20px ;
+     border-radius: 30px;
+     /* padding: 10px 20px; */
+     margin-top: px;
+     position: relative;
+     top: 30px;
+     /* border: 3px solid black;  */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 159px;
+     height: 50px;
+}
