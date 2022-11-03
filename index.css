@@ -1070,8 +1070,7 @@ nav a:hover{
 }
 
 .footer{
-    height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: #F14C38;
    margin-top: 100px;
     
@@ -1673,4 +1672,100 @@ width: 100vw;
      width: 159px;
      height: 50px;
 }
+}
+
+
+
+@media screen and (min-width:748px) and (max-width:1100px){
+    *{
+        /* border: 1px solid  black; */
+    }
+    .about{
+        /* border: 3px solid black; */
+        height: auto;
+        display: grid;
+         justify-content: center;
+       align-items: center;
+    grid-template-columns: 50vw 50vw;
+    /* width: 100vw; */
+    }
+    .about-img{
+        height: auto;
+        /* padding: 10px; */
+        /* border: 3px solid black; */
+    }
+    .about-img img{
+        height: 250px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .about-content{
+        /* border: 3px solid black; */
+        height: auto;
+       margin-top: 50px;
+       /* width: 40vw; */
+    } 
+    .about-content hr{
+        background-color: #F14C38;
+        height: 4px;
+        width:80px;
+        border-radius: 30px;
+        opacity: 1;
+        border: none;
+    } 
+    .about-content .head{
+        display: flex;
+        /* height: 200px; */
+    }
+    .about-content .head h4{
+        color: #556172;
+        /* border: 3px solid black; */
+        font-size: 18px;
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+    .about-content h1{
+        width: 80%;
+        color: #1F5EAB;
+    }
+    .about-content p{
+        width: 90%;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .about-content img{
+        width:24px;
+        height:24px;
+        /* border: 3px solid black; */
+    }
+    .about-content h6{
+        /* border: 3px solid black; */
+        margin-left: 4px;
+    
+    }
+    .quality{
+        display: flex;
+        /* border: 3px solid black; */
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .button{
+        margin-top: 30px;
+        color: white;
+        background-color: #F14C38;
+        text-decoration: none;
+        font-size:20px ;
+         border-radius: 30px;
+         /* padding: 10px 20px; */
+         margin-top: px;
+         position: relative;
+         top: 30px;
+         /* border: 3px solid black;  */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 159px;
+         height: 50px;
+    }
 }
