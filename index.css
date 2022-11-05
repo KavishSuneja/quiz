@@ -1612,19 +1612,27 @@ width: 100vw;
     /* padding: 10px; */
     /* border: 3px solid black; */
 }
-.about-img img{
+.about-img #above{
     height: 70%;
     width: 80vw;
-
+    position: relative;
     margin-left: 10vw;
     margin-top: 50px;
 }
+.about-img #bg{
+    position: absolute;
+    top:20px;
+    width: 80vw;
+    height: 40%;
+    margin-left: 10vw;
+}
+
 .about-content{
     /* border: 3px solid black; */
     height: auto;
     width: 90vw;
     margin-left: 5vw;
-    margin-top: 40px;
+    margin-top: 70px;
 } 
 .about-content hr{
     background-color: #F14C38;
@@ -1710,10 +1718,17 @@ width: 100vw;
         /* padding: 10px; */
         /* border: 3px solid black; */
     }
-    .about-img img{
+    .about-img #above{
         height: 250px;
         margin-left: 20px;
         margin-top: 50px;
+        position: relative;
+    }
+    .about-img #bg{
+        position: absolute;
+        
+        height: 350px;
+        top: 100px;
     }
     .about-content{
         /* border: 3px solid black; */
@@ -1919,13 +1934,24 @@ margin-top: 50px;
     /* border: 3px solid black; */
     float: right;
 }
-.adv-img img{
+.adv-img #above{
     height: 400px;
     margin-left: 5vw;
     /* border: 3px solid black; */
     width: 90vw;
     margin-top: 0px;
+    position: relative;
 }
+.adv-img #bg{
+    position: absolute;
+    top: 500px;
+        height: 400px;
+        margin-left: 5vw;
+        /* border: 3px solid black; */
+        width: 90vw;
+        margin-top: 0px;
+}
+
 .adv-content{
     /* border: 3px solid black; */
     height: auto;
@@ -2022,12 +2048,24 @@ margin-top: 50px;
         /* border: 3px solid black; */
         float: right;
     }
-    .adv-img img{
+    .adv-img #above{
         height: 350px;
         margin-left: 0px;
         /* border: 3px solid black; */
         width: 95%;
         margin-top: -200px;
+        position: relative;
+    }
+
+    .adv-img #bg{
+        position: absolute;
+        /* top: 500px; */
+         height: 350px;
+            margin-left: 5vw;
+            /* border: 3px solid black; */
+            width:35vw;
+
+            margin-top: -20px;
     }
     .adv-content{
         /* border: 3px solid black; */
