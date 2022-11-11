@@ -1194,6 +1194,7 @@ nav a:hover{
       left: 0;
       border: px solid black;
       display: none;
+      background-position: stretch;
     }
     .bottom-footer h3{
       font-weight: 300;
@@ -1321,13 +1322,7 @@ nav a:hover{
         border: px solid black;
         height: 80px;
       }
-      .bottom-footer img{
-        width: 100%;
-        position: absolute;
-        height: 80px;
-        left: 0;
-        border: px solid black;
-      }
+    
       .bottom-footer #footer1img{
         width: 100%;
         position: absolute;
@@ -1343,6 +1338,7 @@ nav a:hover{
         left: 0;
         border: px solid black;
         display: block;
+        
       }
       .bottom-footer h3{
         font-weight: 300;
