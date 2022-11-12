@@ -31,6 +31,7 @@
               <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
               <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
               <img src="images/bottom.png" alt="image not found" id="bottom">
+              <h4 id="com" style="font-size: 16px;color: red;display:none;margin-top: -14px;margin-left: 20px;transition: all 5s;">Invalid Username/Password</h4>
       </div>
       <div id="rightside">
           <img src="images/rightimg.jpeg" alt="image not found" id="rightpic">
@@ -292,6 +293,23 @@
         // document.getElementById('sub').addEventListener('click', check);
        
         
+
+
+        const buttons = document.querySelectorAll("#sub");
+         buttons.forEach((button) => {
+           button.onclick = function(e){
+             let x = e.clientX - e.target.offsetLeft;
+             let y = e.clientY - e.target.offsetTop;
+             let ripple = document.createElement("span");
+             ripple.style.left = `${x}px`;
+             ripple.style.top = `${y}px`;
+             this.appendChild(ripple);
+             setTimeout(function(){
+               ripple.remove();
+             }, 1100); // 1second = 1000ms
+           }
+         });
+         document.getElementById('sub').onclick=function(){check()};
         function check(){
            em = document.getElementById('email').value;
         ps = document.getElementById('pass').value;
@@ -299,7 +317,11 @@
             effect.classList.remove('blur');
             document.getElementById('login').style.display="none";
           }
-          
+          else{
+           ele55= document.getElementById('com').style.display="block";
+          // alert("Invalid Username/Password")
+           
+          }
         }
        
     </script>
