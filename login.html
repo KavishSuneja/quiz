@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="main">
+    <div id="login">
         
         <div id="leftside">
                 <div class="logo">
@@ -26,11 +26,11 @@
                     <h3 id="username">User Name</h3>
                 </div> 
                 <div class="detail">
-                    <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black;"><br></div>
-                    <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black; font-size: 14px;"></div>
+                    <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black;" id="email"><br></div>
+                    <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black;" id="pass"></div>
                 </div>
                 <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
-                <div class="submit"><button type="submit">Login</button></div>
+                <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
                 <img src="images/bottom.png" alt="image not found" id="bottom">
         </div>
         <div id="rightside">

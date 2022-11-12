@@ -32,6 +32,7 @@ body{
     z-index: 500;
     position: fixed;
     
+    
 } 
 #main{
     position: absolute;
@@ -47,6 +48,7 @@ body{
     border-top-left-radius: 30px;
     border: px solid black;
     height: 530px;
+    box-shadow: 7px 2px 12px 0px rgba(0, 0, 0, 0.3);
 }
 .logo{
     border: px solid black;
@@ -112,6 +114,7 @@ body{
     height: 35px;
     border: 1px solid black;
     margin-top: 10px;
+    padding-left:10px ;
 }
 .detail #outer-input{
     position: relative;
@@ -148,7 +151,7 @@ body{
     width: 38%;
     height: 510px;
     position: relative;
-
+    box-shadow: 8px 4px 14px 0px rgba(0, 0, 0, 0.7);
     height: 531px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
@@ -163,7 +166,7 @@ body{
     background-image: url(images/blue.jpg);
     background-size: cover;
     height: 100vh;
-    
+    background: none;
 }
 /* #bg{
     position: absolute;
@@ -245,7 +248,7 @@ body{
 }
 .detail input{
     width: 224px;
-    height: 20px;
+    height: 30px;
     
     margin-top: 10px;
 }
@@ -260,13 +263,13 @@ body{
     margin-top: 0px;
     text-align: center;
  } 
-.submit button{
-    width: 95px;
-    height: 30px;
+ .submit button{
+    width: 125px;
+    height: 35px;
     background-color:#1F5EAB ;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 #bottom{
     width: 80px;
@@ -283,6 +286,7 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
+        background: none;
     }
     /* #bg{
         position: absolute;
@@ -359,7 +363,7 @@ body{
     }
     .detail input{
         width: 204px;
-        height: 20px;
+        height: 30x;
         
         margin-top: 10px;
     }
@@ -379,19 +383,19 @@ body{
         margin-top: 90px;
         text-align: center;
      } 
-    .submit button{
-        width: 95px;
-        height: 30px;
+     .submit button{
+        width: 125px;
+        height: 35px;
         background-color:#1F5EAB ;
         color: white;
         border: none;
-        border-radius: 30px;
+        border-radius: 10px;
     }
     #bottom{
         width: 120px;
         height: 100px;
         position: relative;
-        top: 50px;
+        top: 40px;
         left: 170px;
     }
     #rightside{
