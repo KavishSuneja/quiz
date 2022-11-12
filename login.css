@@ -15,42 +15,29 @@ body{
 } */
 
 
-#sub{
-    position: relative;
-    margin: 0 20px;
-    
-    
-    
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    
-   
-    letter-spacing: 1px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border: none;
-  } 
-  
-  #sub > span{
-    position: absolute;
-    background: #fff;
-    transform: translate(-70%, -30%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ripples 0.6s  infinite;
+#sub {
+    background-position: center;
+    transition: background 0.8s;
   }
-  @keyframes ripples {
-    0% {
-      width: 0px;
-      height: 0px;
-      opacity: 1;
-    }
-    100% {
-      width: 500px;
-      height: 500px;
-      opacity: 0;
-    }
+  #sub:hover {
+    background: #1F5EAB radial-gradient(circle, transparent 1%, #1F5EAB 1%) center/15000%;
+  }
+  #sub:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  /* Button style */
+  #sub {
+    
+    font-size: 16px;
+    
+    cursor: pointer;
+    color: white;
+    
+    box-shadow: 0 0 4px #999;
+    outline: none;
   }
 #login{
     
