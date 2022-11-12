@@ -32,27 +32,14 @@
                 <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
                 <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
                 <img src="images/bottom.png" alt="image not found" id="bottom">
-                <h4 id="com" style="font-size: 14px;color: red;display:none;margin-top: -54px;margin-left: 20px;transition: all 5s;">Invalid Username/Password</h4>
+                <h4 id="com" style="font-size: 12px;color: red;display:none;margin-top: -54px;margin-left: 20px;transition: all 5s;font-family: 'Poppins';">Invalid Username/Password</h4>
         </div>
         <div id="rightside">
             <img src="images/rightimg.jpeg" alt="image not found" id="rightpic">
         </div>
     </div>
     <script>
-        const buttons = document.querySelectorAll("#sub");
-         buttons.forEach((button) => {
-           button.onclick = function(e){
-             let x = e.clientX - e.target.offsetLeft;
-             let y = e.clientY - e.target.offsetTop;
-             let ripple = document.createElement("span");
-             ripple.style.left = `${x}px`;
-             ripple.style.top = `${y}px`;
-             this.appendChild(ripple);
-             setTimeout(function(){
-               ripple.remove();
-             }, 1100); // 1second = 1000ms
-           }
-         });
+       
 
 
 
