@@ -12,6 +12,31 @@
   </head>
 
   <body>
+    <div id="login">
+        
+      <div id="leftside">
+              <div class="logo">
+                  <img src="images/Microsoft_logo.svg.png" class="logoimg">
+                  <h1 class="co-name">Microsoft</h1>
+              </div>
+                   
+              <div class="un">
+                  <img src="images/download.png" alt="image not found" id="userpic">
+                  <h3 id="username">User Name</h3>
+              </div> 
+              <div class="detail">
+                  <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black;" id="email"><br></div>
+                  <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black;" id="pass"></div>
+              </div>
+              <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
+              <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
+              <img src="images/bottom.png" alt="image not found" id="bottom">
+      </div>
+      <div id="rightside">
+          <img src="images/rightimg.jpeg" alt="image not found" id="rightpic">
+      </div>
+  </div>
+    <div id="main">
     <!-- menu-bar -->
     <nav>
 
@@ -213,7 +238,7 @@
           <h3>© 2022 Team Microsoft . All Rights Reserved.</h3>
         </div>
     </div> 
-
+</div>
     <!-- Countdown Js -->
     <script>
       let valueDisplays = document.querySelectorAll(".num");
@@ -258,6 +283,25 @@
             }
           }
         }
+        window.addEventListener('load' , login);
+        effect = document.getElementById('main');
+        function login(){
+         
+         effect.classList.add('blur');
+        }
+        // document.getElementById('sub').addEventListener('click', check);
+       
+        
+        function check(){
+           em = document.getElementById('email').value;
+        ps = document.getElementById('pass').value;
+          if(em == "davpakhowal@gmail.com" && ps=="dav123"){
+            effect.classList.remove('blur');
+            document.getElementById('login').style.display="none";
+          }
+          
+        }
+       
     </script>
 
 

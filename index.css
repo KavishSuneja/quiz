@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600&family=Roboto:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Roboto:wght@100;300;400;700;900&display=swap');
 *{
     margin: 0;
@@ -5,6 +6,409 @@
     border: px solid red;
 }
 
+body{
+    align-items: center;
+    justify-content: center;
+}
+/* #bg{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+} */
+#login{
+    background-image: url(images/blue.jpg);
+    background-size: cover;
+    background:none ;
+    /* border: 5px solid white; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* /* display: none; */
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 500;
+    position: fixed;
+    
+} 
+#main{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    transition: all 0.8s;
+}
+#leftside{
+    width: 26%;
+    background-color: white;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border: px solid black;
+    height: 530px;
+}
+.logo{
+    border: px solid black;
+    display: flex;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+.logoimg{
+    height: 50px;
+    width: 50px;
+    border: px solid black;
+}
+.co-name{
+    height: 50px;
+    width: 200px;
+    border: px solid black;
+    color: #F14C38;
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+.un{
+    
+    margin-top: 30px;
+    border: px solid black;
+    
+}
+.un #userpic{
+    height: 55px;
+    width: 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 40%;
+}
+.un #username{
+    font-family: 'Kanit',sans-serif;
+    width: 204px;
+    border: px solid black;
+    position: relative;
+    left: 37%;;
+    font-weight: 600;
+    font-size: 22px;
+}
+.blur{
+    filter: blur(6px);
+}
+.detail{
+    border: px solid black;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+.detail input{
+    width: 254px;
+    height: 35px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.detail #outer-input{
+    position: relative;
+    left: 60px;
+    width: 254px;
+}
+
+#rightpic2{
+    display: none;
+}
+.submit{
+    border: px solid black;
+    /* position: relative; */
+    margin-top: 70px;
+    text-align: center;
+ } 
+.submit button{
+    width: 125px;
+    height: 35px;
+    background-color:#1F5EAB ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+#bottom{
+    width: 120px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    left: 200px;
+}
+#rightside{
+    background-color: #F1387B;
+    width: 38%;
+    height: 510px;
+    position: relative;
+
+    height: 531px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#rightpic{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:747px){
+    #login{
+    background-image: url(images/blue.jpg);
+    background-size: cover;
+    height: 100vh;
+    
+}
+/* #bg{
+    position: absolute;
+    width: 100%;
+    height: 950px;
+} */
+    #rightside{
+        display: none;
+
+    }
+    #rightpic2{
+    display: block;
+    width: 80%;
+    height: 30%;
+    position: relative;
+    top: 0px;
+    left: 10%;
+    border: px solid black;
+    text-align: center;
+}
+
+#leftside{
+    width: 80%;
+    background-color: white;
+    position: relative;
+    left: 0%;
+    top:0px;
+    border-radius: 30px;
+    height: auto;
+    padding-bottom: 0px;
+}
+.logo{
+    border: px solid black;
+    display: flex;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 18%;
+}
+.logoimg{
+    height: 50px;
+    width: 50px;
+    border: px solid black;
+}
+.co-name{
+    height: 50px;
+    width: 200px;
+    border: px solid black;
+    color: #F14C38;
+    font-family: 'poppins', 'sans-serif';
+    font-size: 30px;
+    font-weight: 600;
+}/*
+.un{
+    position: relative;
+    top: 40px;
+}
+.un #userpic{
+    height: 50px;
+    width: 74px;
+    border: px solid black;
+    position: relative;
+    left: 40%;;
+}
+.un #username{
+    font-family: 'poppins', 'sans-serif';
+    width: 204px;
+    border: px solid black;
+    position: relative;
+    left: 37%;;
+}  */
+
+.detail{
+    border: px solid black;
+    
+    margin-top: 20px;
+}
+.detail input{
+    width: 224px;
+    height: 20px;
+    
+    margin-top: 10px;
+}
+.detail #outer-input{
+    position: relative;
+    left: 50px;
+    width: 254px;
+}
+.submit{
+    border: px solid black;
+    /* position: relative; */
+    margin-top: 0px;
+    text-align: center;
+ } 
+.submit button{
+    width: 95px;
+    height: 30px;
+    background-color:#1F5EAB ;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+#bottom{
+    width: 80px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    display: ;
+}
+} 
+@media screen and (min-width:748px) and (max-width:1200px) {
+    #login{
+        background-image: url(images/blue.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    /* #bg{
+        position: absolute;
+        width: 100%;
+        height: 1900px;
+    } */
+    #login{
+        
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    #leftside{
+        width: 35%;
+        background-color: white;
+        position: relative;
+        top: 00px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border: px solid black;
+    }
+    .logo{
+        border: px solid black;
+        display: flex;
+        gap: 10px;
+        /* justify-content: center;
+        align-items: center; */
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+    .logoimg{
+        height: 50px;
+        width: 50px;
+        border: px solid black;
+    }
+    .co-name{
+        height: 50px;
+        width: 200px;
+        border: px solid black;
+        color: #F14C38;
+        font-family: 'poppins', 'sans-serif';
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .un{
+        
+        margin-top: 20px;
+        border: px solid black;
+        
+    }
+    .un #userpic{
+        height: 50px;
+        width: 74px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 40%;
+    }
+    .un #username{
+        font-family: 'poppins', 'sans-serif';
+        width: 204px;
+        border: px solid black;
+        position: relative;
+        left: 37%;;
+    }
+    .detail{
+        border: px solid black;
+        
+        margin-top: 60px;
+    }
+    .detail input{
+        width: 204px;
+        height: 20px;
+        
+        margin-top: 10px;
+    }
+    .detail #outer-input{
+        position: relative;
+        left: 50px;
+        width: 254px;
+    }
+      
+    
+    #rightpic2{
+        display: none;
+    }
+    .submit{
+        border: px solid black;
+        /* position: relative; */
+        margin-top: 90px;
+        text-align: center;
+     } 
+    .submit button{
+        width: 95px;
+        height: 30px;
+        background-color:#1F5EAB ;
+        color: white;
+        border: none;
+        border-radius: 30px;
+    }
+    #bottom{
+        width: 120px;
+        height: 100px;
+        position: relative;
+        top: 50px;
+        left: 170px;
+    }
+    #rightside{
+        background-color: #F1387B;
+        width: 40%;
+        height: 510px;
+        position: relative;
+        top: 00px;
+        height: 531px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    #rightpic{
+        width: 100%;
+        height: 100%;
+    }
+}
 /* Menu Bar */
 
 .menu-bg{
@@ -1229,7 +1633,7 @@ nav a:hover{
       width: 200px;
       position: relative;
       left:0;
-      
+
     }
     .logoimg-footer{
       border: px solid black;
