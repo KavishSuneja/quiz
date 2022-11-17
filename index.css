@@ -708,7 +708,7 @@ nav a:hover{
     position: absolute;
     top: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-95%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -716,7 +716,7 @@ nav a:hover{
     height: 100px;
     background-color: #F14C38;
     transition: 0.4s ease-in-out;
-    
+
 
     /* FONTS */
     font-family: 'Raleway',sans-serif;
