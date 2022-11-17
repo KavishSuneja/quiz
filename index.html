@@ -8,9 +8,37 @@
     <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/Micro-icon.png" type="image/vnd.microsoft.icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
   </head>
 
   <body>
+    <div id="login">
+        
+      <div id="leftside">
+              <div class="logo">
+                  <img src="images/Microsoft_logo.svg.png" class="logoimg">
+                  <h1 class="co-name">Microsoft</h1>
+              </div>
+                   
+              <div class="un">
+                  <img src="images/download.png" alt="image not found" id="userpic">
+                  <h3 id="username">User Name</h3>
+              </div> 
+              <div class="detail">
+                
+                  <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black;" id="email"><br></div>
+                  <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black;" id="pass"></div>
+              </div>
+              <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
+              <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
+              <img src="images/bottom.png" alt="image not found" id="bottom">
+              <h4 id="com" style="font-size: 15px;color: red;display:none;margin-top: -14px;margin-left: 20px;transition: all 5s;font-family: 'Kanit';">Invalid Username/Password</h4>
+      </div>
+      <div id="rightside">
+          <img src="images/rightimg.jpeg" alt="image not found" id="rightpic">
+      </div>
+  </div>
+    <div id="main">
     <!-- menu-bar -->
     <nav>
 
@@ -117,33 +145,58 @@
           <span class="name-of-perosonal">Offline Students</span>
         </div> 
       </div>
-
+      <div class="adv reveal">
+        
+        <div class="adv-content">
+          <div class="head">
+            <hr><h4>Advance Feature</h4>
+          </div>
+          <h1>Our Advance Educator Learning System</h1>
+          <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days and beast greater grass signs abundantly have greater also use over face earth days years under brought moveth she star</p>
+          <div class="quality-adv">
+            <div class="div-one">
+              <span class="ti-pencil-alt"></span>
+              <h4>Learn Anywhere</h4>
+              <h6>There earth face earth behold she star so made void two given and also our</h6>
+            </div>
+            <div class="div-two">
+              <span class="ti-stamp"></span>
+              <h4>Expert Teacher</h4>
+              <h6>There earth face earth behold she star so made void two given and also our</h6>
+            </div>
+          </div>
+              
+              <!-- <a href="#" class="button">Contact</a> -->
+        </div>
+        <div class="adv-img">
+          <img src="images/advance feature bg.jpg" id="bg">
+          <img src="images/adv.png" id="above">
+        </div>
+      </div> 
 
 <!-- About us -->
-      <div class="about">
+      <div class="about reveal">
         <div class="about-img">
-          <img src="images/aboutus.webp">
+          <img src="images/advance feature bg.jpg" id="bg">
+          <img src="images/aboutus.webp" id="above">
         </div>
         <div class="about-content">
           <div class="head">
             <hr><h4>About Us</h4>
           </div>
           <h1>Learning with Love 
-            and Laughter</h1>
-            
+            and Laughter</h1>                      
+          <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days and beast greater grass signs abundantly have greater also use over face earth days years under brought moveth she star</p>
+          <div class="quality">
+            <img src="images/about us pencil logo.png">
+            <h6>Him lights given i heaven second yielding seas gathered wear</h6>
+          </div>
+          <div class="quality">
+            <i class="fa-solid fa-pen-ruler" style="font-size: 23px;"></i>
+            <h6>Fly female them whales fly them day deep given night.</h6>
+          </div>
               
-                
-                <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days and beast greater grass signs abundantly have greater also use over face earth days years under brought moveth she star</p>
-              <div class="quality">
-                <img src="images/about us pencil logo.png">
-                <h6>Him lights given i heaven second yielding seas gathered wear</h6>
-              </div>
-              <div class="quality">
-                <i class="fa-solid fa-pen-ruler" style="font-size: 23px;"></i>
-                <h6>Fly female them whales fly them day deep given night.</h6>
-              </div>
-              
-              <a href="#" class="button">Contact</a>
+          <a href="#" class="button">Contact</a>
         </div>
         
       </div> 
@@ -187,7 +240,7 @@
           <h3>© 2022 Team Microsoft . All Rights Reserved.</h3>
         </div>
     </div> 
-
+</div>
     <!-- Countdown Js -->
     <script>
       let valueDisplays = document.querySelectorAll(".num");
@@ -205,6 +258,59 @@
           }
         }, duration ); 
       });
+
+
+
+
+
+
+
+
+      window.addEventListener('scroll', reveal);
+
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+        
+          for(var i = 0; i < reveals.length; i++){
+          
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+          
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+        window.addEventListener('load' , login);
+        effect = document.getElementById('main');
+        function login(){
+         
+         effect.classList.add('blur');
+        }
+        // document.getElementById('sub').addEventListener('click', check);
+       
+        
+
+
+         document.getElementById('sub').onclick=function(){check()};
+        function check(){
+           em = document.getElementById('email').value;
+        ps = document.getElementById('pass').value;
+          if(em == "davpakhowal@gmail.com" && ps=="dav123"){
+            effect.classList.remove('blur');
+            document.getElementById('login').style.display="none";
+          }
+          else{
+           ele55= document.getElementById('com').style.display="block";
+          // alert("Invalid Username/Password")
+           
+          }
+        }
+       
     </script>
 
 

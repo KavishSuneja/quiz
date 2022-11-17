@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="main">
+    <div id="login">
         
         <div id="leftside">
                 <div class="logo">
@@ -26,16 +26,36 @@
                     <h3 id="username">User Name</h3>
                 </div> 
                 <div class="detail">
-                    <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black;"><br></div>
-                    <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black; font-size: 14px;"></div>
+                    <div id="outer-input"><input type="text" placeholder="  &#xf007;  Email Address" style="font-family:Arial, FontAwesome; color: black; font-size: 17px;" id="email"><br></div>
+                    <div id="outer-input"><input type="text" placeholder="  &#xf023;  Password" style="font-family:Arial, FontAwesome; color: black;font-size: 17px;" id="pass"></div>
                 </div>
                 <img src="images/rightimg.jpeg" alt="image not found" id="rightpic2">
-                <div class="submit"><button type="submit">Login</button></div>
+                <div class="submit"><button type="submit" id="sub" onclick="check()">Login</button></div>
                 <img src="images/bottom.png" alt="image not found" id="bottom">
+                <h4 id="com" style="font-size: 12px;color: red;display:none;margin-top: -54px;margin-left: 20px;transition: all 5s;font-family: 'Poppins';">Invalid Username/Password</h4>
         </div>
         <div id="rightside">
             <img src="images/rightimg.jpeg" alt="image not found" id="rightpic">
         </div>
     </div>
+    <script>
+       
+
+
+
+         document.getElementById('sub').onclick=function(){check()};
+        function check(){
+           em = document.getElementById('email').value;
+        ps = document.getElementById('pass').value;
+          if(em == "davpakhowal@gmail.com" && ps=="dav123"){
+            location.replace("index.html")
+          }
+          else{
+           ele55= document.getElementById('com').style.display="block";
+          // alert("Invalid Username/Password")
+           
+          }
+        }
+    </script>
 </body>
 </html>
