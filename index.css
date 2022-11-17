@@ -265,6 +265,7 @@ nav a:hover{
     background-color: #fefefe;
     border-radius: 0px;
     position: relative;
+    transform: translateY(0px);
 }
 
 .card-level .logo{
@@ -320,6 +321,8 @@ nav a:hover{
 .card-level:hover{
     border: 2px solid #1F5EAB;
     border-radius: 4px;
+    transition: transform 0.4s  linear;
+    transform: translateY(-10px);
 
 }
 
