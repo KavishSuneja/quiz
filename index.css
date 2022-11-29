@@ -439,6 +439,8 @@ body{
         height: 100%;
     }
 }
+
+
 /* Menu Bar */
 
 .menu-bg{
@@ -702,13 +704,13 @@ nav a:hover{
     transform: translateY(0px);
 }
 
-.card-level .logo{
+.card-level .logo-sel{
     border: px solid red;
     border-radius: 50%;
     position: absolute;
     top: 50px;
     left: 50%;
-    transform: translateX(-95%);
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -746,7 +748,7 @@ nav a:hover{
 }
 
 
-.card-level:hover .logo{
+.card-level:hover .logo-sel{
     background-color: #1F5EAB;
 
 }
@@ -1073,7 +1075,7 @@ nav a:hover{
     position: relative;
 }
 
-.card-level .logo{
+.card-level .logo-sel{
     border: px solid red;
     border-radius: 50%;
     position: absolute;
@@ -1117,7 +1119,7 @@ nav a:hover{
 }
 
 
-.card-level:hover .logo{
+.card-level:hover .logo-sel{
     background-color: #1F5EAB;
 
 }
@@ -1404,7 +1406,7 @@ nav a:hover{
     position: relative;
 }
 
-.card-level .logo{
+.card-level .logo-sel{
     border: px solid red;
     border-radius: 50%;
     position: absolute;

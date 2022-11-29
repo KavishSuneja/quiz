@@ -72,5 +72,14 @@ var quesArray = [ {
      b_text.innerHTML = quesArray[num].OptionB;
      c_text.innerHTML = quesArray[num].OptionC;
      d_text.innerHTML = quesArray[num].OptionD;
+
+     document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
+     document.querySelectorAll('hr')[num].classList.add('on-ques');
+
       return num++
     };
+
+
+    obj = document.querySelectorAll('.opt-cl').onclick;
+    
+
