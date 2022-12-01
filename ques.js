@@ -79,7 +79,25 @@ var quesArray = [ {
       return num++
     };
 
+    var ans = '';
+    var score = 0;
 
-    obj = document.querySelectorAll('.opt-cl').onclick;
+    document.querySelectorAll('.opt-cl').forEach(ele => {
+      ele.onclick = function(){
+        ans = "";
+        ele.classList.toggle("on-cl");
+        ele.previousElementSibling.classList.toggle("on-cl");
+        ans = this.innerHTML;
+        
+        if( ans == quesArray[num-1].Answer){
+         score = score + 100;
+         console.log(score)
+         }
+         else{
+          console.log(score)
+         }
+      }
+    });
+
     
 
