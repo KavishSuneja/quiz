@@ -10,56 +10,81 @@
 </head>
 
  <body id="bd">
-    <h1 id="head-ques">Quiz Questions</h1>
-
-    <div class="circles">
-        <div id="cir-1" class="cl-cir on-ques">1</div>
-        <hr class="on-ques">
-        <div id="cir-2" class="cl-cir">2</div>
-        <hr>
-        <div id="cir-3" class="cl-cir">3</div>
-        <hr>
-        <div id="cir-4" class="cl-cir">4</div>
+    <div id="ist-main">
+        <div id="ist-container">
+            <div id="ist-1"><img src="images/slider-1.1.png" alt=""></div>
+            <div id="ist-2">
+                <div id="ist-2-bac">
+                     <img src="images/bac-col.jpeg" alt="">
+                    <h1>Instructions</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed dolore animi sint non
+                        accusantium delectus officia soluta consequuntur odio exercitationem, perferendis molestiae,
+                        facere dolorum minima voluptas! Vero, alias sed!
+                    </p>
+                </div>
+            </div>
+            <input type="button" value="Got It" id="moveon" onclick="moveon()">
+        </div>
     </div>
+    <div id="ques">
+          <h1 id="head-ques">Quiz Questions</h1>
 
-    <span class="question" id="questions1"></span>
-    <img src="images/Illustration ques page.png" class="illustration-img">
+          <div class="circles">
+              <div id="cir-1" class="cl-cir on-ques">1</div>
+              <hr class="on-ques">
+              <div id="cir-2" class="cl-cir">2</div>
+              <hr>
+              <div id="cir-3" class="cl-cir">3</div>
+              <hr>
+              <div id="cir-4" class="cl-cir">4</div>
+          </div>
+      
+          <span class="question" id="questions1"></span>
+          <img src="images/Illustration ques page.png" class="illustration-img">
+      
+      
+          <div class="options">
+              <h2 class="abcd ">A</h2> <div class="opt-cl " id="a_text" >Lorem</div> <!-- jispe click hoga "on-cl" -->
+              <h2 class="abcd">B</h2> <div class="opt-cl" id="b_text"   >Lipsum</div>
+              <h2 class="abcd">C</h2> <div class="opt-cl" id="c_text"   >Lorem Lipsum</div>
+              <h2 class="abcd">D</h2> <div class="opt-cl" id="d_text"   >Lipsum Lorem</div>  
+          </div>
+      
+          <div class="btn-div">
+          <button class="btn-nextques" id="sbmitbtn" onclick="quest()">Next Question <i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
 
-
-    <div class="options">
-        <h2 class="abcd ">A</h2> <div class="opt-cl " id="a_text" >Lorem</div> <!-- jispe click hoga "on-cl" -->
-        <h2 class="abcd">B</h2> <div class="opt-cl" id="b_text"   >Lipsum</div>
-        <h2 class="abcd">C</h2> <div class="opt-cl" id="c_text"   >Lorem Lipsum</div>
-        <h2 class="abcd">D</h2> <div class="opt-cl" id="d_text"   >Lipsum Lorem</div>  
-    </div>
-
-    <div class="btn-div">
-    <button class="btn-nextques" id="sbmitbtn" onclick="quest()">Next Question <i class="fa-solid fa-arrow-right"></i> </button>
+          <!-- POP-UP CODE -->
+      
+        
+          
     </div>
     
-    <!-- POP-UP CODE -->
-
+    
     <div id="rst-container">
+
+              <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+             <h1 class="heading">Congratulation !</h1>
+         <div id="rst-mainbox">
+             <div class="circle1">
+                 <span class="sc-rm">Score</span>
+                 <span class="sc-scr">100</span>
+             </div>
+         
+             <div class="circle2">
+                 <span class="sc-rm">Remarks</span>
+                 <span class="sc-scr">100</span>
+             </div>
+         
+         </div>
+     
+             <h1 class="user">Carry Sharma</h1>
+             <h1 class="perf">Very Good  !</h1>
+     
+    </div>
         
-        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
-       <h1 class="heading">Congratulation !</h1>
-   <div id="rst-mainbox">
-       <div class="circle1">
-           <span class="sc-rm">Score</span>
-           <span class="sc-scr">100</span>
-       </div>
-
-       <div class="circle2">
-           <span class="sc-rm">Remarks</span>
-           <span class="sc-scr">100</span>
-       </div>
-
-   </div>
-
-       <h1 class="user">Carry Sharma</h1>
-       <h1 class="perf">Very Good  !</h1>
-
-
-    <script src="ques.js"></script>
+        
+        <script src="ques.js"></script>
 </body>
 </html>
