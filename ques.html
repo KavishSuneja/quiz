@@ -9,7 +9,7 @@
     <title>Quiz</title>
 </head>
 
- <body>
+ <body id="bd">
     <h1 id="head-ques">Quiz Questions</h1>
 
     <div class="circles">
@@ -35,7 +35,30 @@
 
     <div class="btn-div">
     <button class="btn-nextques" id="sbmitbtn" onclick="quest()">Next Question <i class="fa-solid fa-arrow-right"></i> </button>
-    </div> 
+    </div>
+    
+    <!-- POP-UP CODE -->
+
+    <div id="rst-container">
+        
+        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+       <h1 class="heading">Congratulation !</h1>
+   <div id="rst-mainbox">
+       <div class="circle1">
+           <span class="sc-rm">Score</span>
+           <span class="sc-scr">100</span>
+       </div>
+
+       <div class="circle2">
+           <span class="sc-rm">Remarks</span>
+           <span class="sc-scr">100</span>
+       </div>
+
+   </div>
+
+       <h1 class="user">Carry Sharma</h1>
+       <h1 class="perf">Very Good  !</h1>
+
 
     <script src="ques.js"></script>
 </body>

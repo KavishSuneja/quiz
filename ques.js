@@ -35,16 +35,8 @@ var quesArray = [ {
      OptionC:"Blogger",
      OptionD:"Comedian",
 
-    }, 
-
-    {
-     question: "abcd",
-     OptionA:"a",
-     OptionB:"b",
-     OptionC:"c",
-     OptionD:"d",
-    
-    }, 
+    }
+     
 ];
 
     var nextquestionbtn = document.getElementById('sbmitbtn');
@@ -65,7 +57,26 @@ var quesArray = [ {
     c_text.innerHTML = quesArray[0].OptionC;
     d_text.innerHTML = quesArray[0].OptionD;
     
+    
+    function pop (){
+      document.getElementById('rst-container').style.display = 'flex';
+    }
+
+
     function quest() {
+
+      document.querySelectorAll('.opt-cl').forEach(ele => {
+        if(ele.classList.contains('on-cl')){
+          ele.classList.remove('on-cl')
+        }
+      })
+
+      document.querySelectorAll('.abcd').forEach(ele => {
+        if(ele.classList.contains('on-cl')){
+          ele.classList.remove('on-cl')
+        }
+      })
+
 
      questions.innerHTML = quesArray[num].question;
      a_text.innerHTML = quesArray[num].OptionA;
@@ -73,10 +84,23 @@ var quesArray = [ {
      c_text.innerHTML = quesArray[num].OptionC;
      d_text.innerHTML = quesArray[num].OptionD;
 
-     document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
-     document.querySelectorAll('hr')[num].classList.add('on-ques');
 
+     if(num >= 3){
+
+      document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
+      // document.getElementById('bd').classList.add('blur')
+      document.getElementById('rst-container').style.visibility = "visible";
+
+     }else{
+
+      document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
+      document.querySelectorAll('hr')[num].classList.add('on-ques');
+     }
+ 
       return num++
+
+      
+      
     };
 
     var ans = '';
@@ -98,6 +122,12 @@ var quesArray = [ {
          }
       }
     });
+
+    var scorePercentage = score/500*100;
+    
+
+
+    
 
     
 
