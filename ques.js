@@ -55,7 +55,7 @@ window.addEventListener('scroll', reveal);
   
 
 
-  document.getElementById('sub').addEventListener('load' , check);
+   document.getElementById('sub').onclick=function(){check()};
    function check(){
      em2 = document.getElementById('email').value;
   ps2 = document.getElementById('pass').value;
