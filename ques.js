@@ -35,8 +35,17 @@ var quesArray = [ {
      OptionB:"Youtuber",
      OptionC:"Blogger",
      OptionD:"Comedian",
+     Answer:"Youtuber",
 
-    }
+    },
+    {
+      question: "Who is Carry Minati?",
+      OptionA:"Tik Toker",
+      OptionB:"Youtuber",
+      OptionC:"Blogger",
+      OptionD:"Comedian",
+ 
+     }
      
 ];
 
@@ -86,13 +95,12 @@ var quesArray = [ {
      d_text.innerHTML = quesArray[num].OptionD;
 
 
-     if(num >= 3){
+     if(num >= 4){
 
-      document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
-      // document.getElementById('bd').classList.add('blur')
       document.getElementById('rst-container').style.visibility = "visible";
 
-     }else{
+     }
+     else{
 
       document.querySelectorAll('.cl-cir')[num].classList.add("on-ques")
       document.querySelectorAll('hr')[num].classList.add('on-ques');
@@ -115,20 +123,20 @@ var quesArray = [ {
         ans = this.innerHTML;
         
         if( ans == quesArray[num-1].Answer){
-         score = score + 100;
-         console.log(score)
+         score = score + 10;
+         document.getElementById('score-id').innerHTML = score;
+         var scorePercentage = score/40*100;
+         document.getElementById('percen-id').innerHTML = parseInt(scorePercentage) + "%";
+
          }
-         else{
-          console.log(score)
-         }
+         return score;
       }
     });
 
-    var scorePercentage = score/500*100;
     
+
 function moveon(){
   document.getElementById('ist-main').style.display="none";
- document.getElementsByClassName('options').style.zIndex="1000";
   
 }
 

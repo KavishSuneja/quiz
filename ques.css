@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600&family=Roboto:wght@100;300;400;700;900&display=swap');
 *{
-    padding: 0;margin: 0;
+    padding: 0;
+    margin: 0;
+    border: px solid;
 }
 
 /* body{
@@ -121,7 +123,7 @@
     
     #ist-1{
         display: inline-block;
-        width: 30vw;
+        width: 40vw;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -130,7 +132,7 @@
     }
     
     #ist-1 img{
-        width: 80%;
+        width: 100%;
     }
     
     #ist-2{
@@ -213,7 +215,7 @@
     
     #ist-1{
         display: inline-block;
-        width: 30vw;
+        width: 50vw;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -222,12 +224,12 @@
     }
     
     #ist-1 img{
-        width: 80%;
+        width: 100%;
     }
     
     #ist-2{
         display: inline-block;
-        width: 90%;
+        width: 70%;
         height: 100%;
         position: absolute;
         right: 0%;
@@ -242,8 +244,9 @@
     }
     
     #ist-2 h1{
-        padding-top: 7%;
-        margin-right: 8%;
+        padding-top: 10%;
+        margin-right: 2%;
+        margin-left: 0;
         color: white;
         font-size: 50px;
         text-align: right;
@@ -251,13 +254,13 @@
     
     #ist-2-bac p{
         position: absolute;
-        right: 50px;
+        right: 2%;
         color: white;
         margin-top: 50px;
         /* margin-right: 90px; */
         /* text-align: right; */
         font-size: 1.3rem;
-        width: 50%;
+        width: 70%;
         text-align: right;
     }
     
