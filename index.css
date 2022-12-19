@@ -2821,3 +2821,12 @@ width: 90vw;
 		display: none;
 	}
 }
+
+
+
+
+@media(max-width:747px){
+    #testimonial_area{
+        display: none;
+    }
+}
