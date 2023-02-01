@@ -153,6 +153,7 @@ body{
     
     
 } 
+
 #main{
     position: absolute;
     display: block;
@@ -176,8 +177,12 @@ body{
     /* justify-content: center;
     align-items: center; */
     height: 50px;
-    margin-top: 30px;
-    margin-left: 20%;
+     margin-top: 30px;
+    /*margin-left: 20%; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
 }
 .logoimg{
     height: 50px;
@@ -194,9 +199,17 @@ body{
     font-weight: 600;
     position: relative;
     top: 5px;
+
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+   
 }
 .un{
-    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
     margin-top: 30px;
     border: px solid black;
     
@@ -209,16 +222,23 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    left: 40%;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    border: px solid black;
+    width: fit-content;
 }
 .un #username{
     font-family: 'Kanit',sans-serif;
     width: 204px;
     border: px solid black;
     position: relative;
-    left: 37%;;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: 600;
     font-size: 22px;
+    border: px solid black;
+    width: fit-content;
 }
 .blur{
     filter: blur(6px);
@@ -227,18 +247,22 @@ body{
     border: px solid black;
     /* border: 1px solid black; */
     margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
 }
 .detail input{
     width: 254px;
     height: 35px;
-    border: 1px solid black;
+    border:1px solid black;
     margin-top: 10px;
     padding-left:10px ;
 }
 .detail #outer-input{
     position: relative;
-    left: 60px;
-    width: 254px;
+    
+    width: 250px;
 }
 
 #rightpic2{
@@ -264,6 +288,9 @@ body{
     position: relative;
     top: 40px;
     left: 200px;
+    position: relative;
+    left: 90%;
+    transform: translateX(-90%);
 }
 #rightside{
     background-color: #F1387B;
@@ -432,16 +459,19 @@ body{
         border: px solid black;
         display: flex;
         gap: 10px;
-        /* justify-content: center;
-        align-items: center; */
-        height: 50px;
+        position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+        height: auto;
         margin-top: 30px;
-        margin-left: 20%;
+        
     }
     .logoimg{
         height: 50px;
         width: 50px;
         border: px solid black;
+        width: fit-content;
     }
     .co-name{
         height: 50px;
@@ -450,10 +480,13 @@ body{
         color: #F14C38;
         font-family: 'poppins', 'sans-serif';
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 600;width: fit-content;
     }
     .un{
-        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
         margin-top: 20px;
         border: px solid black;
         
@@ -466,30 +499,37 @@ body{
         display: flex;
         justify-content: center;
         position: relative;
-        left: 40%;
+        width: fit-content;
+        border: px solid black;
     }
     .un #username{
         font-family: 'poppins', 'sans-serif';
         width: 204px;
         border: px solid black;
         position: relative;
-        left: 37%;;
+        width: fit-content;
+        border: px solid black;
     }
     .detail{
         border: px solid black;
-        
-        margin-top: 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        margin-top: 60px;border: px solid black;
     }
     .detail input{
         width: 204px;
         height: 30x;
-        
+        border: px solid black;
         margin-top: 10px;
     }
     .detail #outer-input{
         position: relative;
-        left: 50px;
+        left: 0px;
         width: 254px;
+        border: px solid black;
+        width: fit-content;
     }
       
     
@@ -514,8 +554,12 @@ body{
         width: 120px;
         height: 100px;
         position: relative;
-        top: 40px;
-        left: 170px;
+        top: 10px;
+       
+        position: relative;
+        left: 90%;
+        transform: translateX(-90%);
+        width: fit-content;
     }
     #rightside{
         background-color: #F1387B;
@@ -1606,6 +1650,7 @@ nav a:hover{
     width: 100%;
     background-color: #F14C38;
    margin-top: 100px;
+    height: 280px;
     
   }
   .items-footer{
@@ -1639,38 +1684,58 @@ nav a:hover{
     width: 200px;
     position: relative;
     left: 150px;
+    margin-top: 20px;
   }
   .logoimg-footer{
     border: px solid black;
     width: 50px;
     position: relative;
     top: 20px;
-    left: 65px;
+    left: 0px;
+    left: 50%;
+        transform: translate(-50%);
   }
   .logo-footer h1{
-    color: #fefefe;
-    font-family: 'Roboto';
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
+    border: px solid black;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+        transform: translate(-50%);
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fefefe;
+  }
+  .social{
+    position: relative;
+    left: 50%;
+        transform: translate(-50%);
+        border: px solid white;
+        width: fit-content;
+        /* margin-right: 12px; */
   }
   .social .fa{
     color: #fefefe;
+    
     font-size: 20px;
     margin-right: 10px;
     border: 1px solid white;
     border-radius: 40%;
     padding: 6px;
     position: relative;
-    left: 5px;
-    bottom: 0px;
+    left: 7px;
+  }
+  .menu-footer{
+    position: relative;
+    top: 20px;
   }
     .menu-footer h3{
         font-family: 'Roboto';
         color: white;
         font-size: 23px;
         margin-top: 20px;
+        font-weight: bold;
     }
     .menu-footer h4{
         font-family: 'montserrat';
@@ -1687,11 +1752,16 @@ nav a:hover{
         margin-left: 0px;
         font-size: 19px;
     }
+    .menu-footer2{
+        margin-top: 20px;
+        
+      }
     .menu-footer2 h3{
         font-family: 'Roboto';
         color: white;
         font-size: 23px;
         margin-top: 20px;
+        font-weight: bold;
     }
     .menu-footer2 h4{
         font-family: 'montserrat';
@@ -1703,15 +1773,17 @@ nav a:hover{
         margin-left: 0px;
     }
     .bottom-footer{
-      width:100%;
-      /* position: absolute; */
-      border: px solid black;
-      text-align: center;
-      font-family: 'poppins';
-      background-color: #;
-      color: rgba(0, 0, 0, 0.7);
-      border: px solid black;
-      height: 80px;
+        width:100%;
+        /* position: absolute; */
+        border: px solid black;
+        text-align: center;
+        font-family: 'poppins';
+        background-color: #;
+        color: rgba(0, 0, 0, 0.7);
+        border: px solid black;
+        height: 80px;
+        position:absolute;
+        bottom:0;
     }
     .bottom-footer img{
       width: 100%;
@@ -2102,7 +2174,7 @@ grid-template-columns: 1fr 1fr;
     color: #1F5EAB;
     font-weight: 600;
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
 }
 .about-content p{
     width: 90%;
@@ -2418,7 +2490,7 @@ margin-top: 50px;
     color: #1F5EAB;
     font-weight: 600;
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
 }
 .adv-content p{
     width: 90%;
