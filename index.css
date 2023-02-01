@@ -676,7 +676,7 @@ nav a:hover{
     /* FONTS */
 
     font-family: 'Raleway',sans-serif;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
     line-height: 50px;
     color: #FEFEFE;
@@ -2828,5 +2828,290 @@ width: 90vw;
 @media(max-width:747px){
     #testimonial_area{
         display: none;
+    }
+}
+
+/* testimonials */
+.custreview{
+    border: px solid red;
+    position: relative;
+    margin-top: 40px;
+    height: 500px;
+    background: #F14C38;
+    background-size: cover;
+    background-repeat:no-repeat ;
+
+
+}
+
+.heading-cust{
+    border: px solid white;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    /* FONTS */
+
+    font-family: 'Kanit' , sans-serif;
+    font-size: 40px;
+    color: #fefefe;
+}
+.cust-img{
+    border: px solid white;
+    position: relative;
+    height: 200px;
+    width: 600px;
+    margin: 0px auto;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customers-img{
+    border: px solid white;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+#main-cust-img{
+    width: 200px;
+    height: 200px;
+}
+
+.star-5{
+    border: px solid white;
+    width: 120px;
+    margin: 0px auto;
+    position: relative;
+    top: 60px;
+}
+
+.fa-star{
+    color: #FEFEFE;
+
+    /* FONT */
+
+    font-family:'Roboto' , sans-serif ;
+    font-size: 20px;
+}
+
+
+.review-customer{
+    border:px solid white;
+    position: relative;
+    margin: 0px auto;
+    top: 75px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    line-height: 25px;
+
+    /* FONTS */
+
+    font-family:'Katin' , sans-serif ;
+    font-size: 20px;
+    color: #FEFEFE;
+}
+.name-customer{
+    border: px solid white;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    justify-self: center;
+    top: 35px;
+
+    /* FONTS */
+    font-family:'Montserrat' , sans-serif ;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+@media (max-width:609px) {
+    .custreview{
+        border: px solid red;
+        position: relative;
+        margin-top: 30px;
+        height: 430px;
+        background: #F14C38;
+        background-size: cover;
+        background-repeat:no-repeat ;
+    
+    
+    }
+    
+    .heading-cust{
+        border: px solid white;
+        height: 50px;
+        position: relative;
+        top: 15px;
+        /* FONTS */
+    
+        font-family: 'Kanit' , sans-serif;
+        font-size: 30px;
+        color: #fefefe;
+    }
+    .cust-img{
+        border: px solid white;
+        position: relative;
+        height: 200px;
+        width: 90%;
+        margin: 0px auto;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .customers-img{
+        border: px solid white;
+        width: 30%;
+        height: 40%;
+        border-radius: 50%;
+    }
+
+    #main-cust-img{
+        width: 40%;
+        height: 60%;
+    }
+    
+    .star-5{
+        border: px solid white;
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+        position: relative;
+        top: -20px;
+    }
+    
+    .fa-star{
+        color: #FEFEFE;
+    
+        /* FONT */
+    
+        font-family:'Roboto' , sans-serif ;
+        font-size: 20px;
+    }
+    
+    
+    .review-customer{
+        border:px solid white;
+        position: relative;
+        margin: 0px auto;
+        top: 15px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 20px;
+    
+        /* FONTS */
+    
+        font-family:'Katin' , sans-serif ;
+        font-size: 18px;
+        color: #FEFEFE;
+    }
+    .name-customer{
+        border: px solid white;
+        position: relative;
+        margin: 0px auto;
+        text-align: center;
+        justify-self: center;
+        top: 10px;
+    
+}
+
+}
+
+@media (min-width:610px) and (max-width:1000px){
+    .custreview{
+        border: px solid red;
+        position: relative;
+        top: 0px;
+        margin-top: 20px;
+        height: 500px;
+        background: #F14C38;
+        background-size: cover;
+        background-repeat:no-repeat ;
+    
+    
+    }
+    
+    .heading-cust{
+        border: px solid white;
+        height: 50px;
+        position: relative;
+        top: 15px;
+        /* FONTS */
+    
+        font-family: 'Kanit' , sans-serif;
+        font-size: 40px;
+        color: #fefefe;
+    }
+    .cust-img{
+        border: px solid white;
+        position: relative;
+        height: 200px;
+        width: 50%;
+        margin: 0px auto;
+        top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .customers-img{
+        border: px solid white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    #main-cust-img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .star-5{
+        border: px solid white;
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+        position: relative;
+        top: 40px;
+    }
+    
+    .fa-star{
+        color: #FEFEFE;
+    
+        /* FONT */
+    
+        font-family:'Roboto' , sans-serif ;
+        font-size: 20px;
+    }
+    
+    
+    .review-customer{
+        border:px solid white;
+        position: relative;
+        margin: 0px auto;
+        top: 55px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 20px;
+    
+        /* FONTS */
+    
+        font-family:'Katin' , sans-serif ;
+        font-size: 18px;
+        color: #FEFEFE;
+    }
+    .name-customer{
+        border: px solid white;
+        position: relative;
+        margin: 0px auto;
+        text-align: center;
+        justify-self: center;
+        top: 45px;
     }
 }

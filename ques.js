@@ -48,7 +48,7 @@ var quesArray = [ {
      }
      
 ];
-
+ 
     var nextquestionbtn = document.getElementById('sbmitbtn');
     var questions = document.getElementById('questions1');
     var A = document.getElementById('a_text');
@@ -70,6 +70,9 @@ var quesArray = [ {
     
     function pop (){
       document.getElementById('rst-container').style.display = 'flex';
+      
+          
+     
     }
 
 
@@ -96,8 +99,12 @@ var quesArray = [ {
 
 
      if(num >= 4){
-
+      em_get=localStorage.getItem("myValue");
+      console.log(em_get)
+      document.getElementById('bbv').innerText = em_get;
+      
       document.getElementById('rst-container').style.visibility = "visible";
+      
 
      }
      else{
@@ -127,7 +134,7 @@ var quesArray = [ {
          document.getElementById('score-id').innerHTML = score;
          var scorePercentage = score/40*100;
          document.getElementById('percen-id').innerHTML = parseInt(scorePercentage) + "%";
-          
+         
          }
          return score;
       }
