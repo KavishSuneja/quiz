@@ -798,7 +798,7 @@ nav a:hover{
     transform: translateY(0px);
 }
 
-.card-level .logo-sel{
+.card-level .logo-sel2{
     border: px solid red;
     border-radius: 50%;
     position: absolute;
@@ -842,7 +842,7 @@ nav a:hover{
 }
 
 
-.card-level:hover .logo-sel{
+.card-level:hover .logo-sel2{
     background-color: #1F5EAB;
 
 }
@@ -1169,7 +1169,7 @@ nav a:hover{
     position: relative;
 }
 
-.card-level .logo-sel{
+.card-level .logo-sel2{
     border: px solid red;
     border-radius: 50%;
     position: absolute;
@@ -1213,7 +1213,7 @@ nav a:hover{
 }
 
 
-.card-level:hover .logo-sel{
+.card-level:hover .logo-sel2{
     background-color: #1F5EAB;
 
 }
@@ -1500,7 +1500,7 @@ nav a:hover{
     position: relative;
 }
 
-.card-level .logo-sel{
+.card-level .logo-sel2{
     border: px solid red;
     border-radius: 50%;
     position: absolute;

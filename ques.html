@@ -87,7 +87,11 @@
              <h1 class="perf">Very Good  !</h1>
      
     </div>
-        
+        <script>
+            em_get=localStorage.getItem("myValue");
+            console.log(em_get);
+            document.getElementsByClassName('user').innerHTML = em_get;
+        </script>
         
         <script src="ques.js"></script>
 </body>
