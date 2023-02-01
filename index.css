@@ -350,14 +350,18 @@ body{
     gap: 10px;
     /* justify-content: center;
     align-items: center; */
-    height: 50px;
+    height: auto;
     margin-top: 30px;
-    margin-left: 18%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
 }
 .logoimg{
     height: 50px;
     width: 50px;
     border: px solid black;
+    width: fit-content;
 }
 .co-name{
     height: 50px;
@@ -367,6 +371,7 @@ body{
     font-family: 'poppins', 'sans-serif';
     font-size: 30px;
     font-weight: 600;
+    width: fit-content;
 }/*
 .un{
     position: relative;
@@ -389,19 +394,25 @@ body{
 
 .detail{
     border: px solid black;
-    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
     margin-top: 20px;
 }
 .detail input{
     width: 224px;
     height: 30px;
-    
+    width: fit-content;
     margin-top: 10px;
+    border: 1px solid black;
 }
 .detail #outer-input{
     position: relative;
-    left: 50px;
+    left: 0px;
     width: 254px;
+    width: fit-content;
+    border: px solid black;
 }
 .submit{
     border: px solid black;
@@ -424,6 +435,11 @@ body{
     top: 30px;
     left: 200px;
     display: ;
+    position: relative;
+    left: 90%;
+    transform: translateX(-90%);
+    width: fit-content;
+    
 }
 } 
 @media screen and (min-width:748px) and (max-width:1200px) {
@@ -1808,9 +1824,12 @@ nav a:hover{
       border: px solid black;
       font-size: 15px;
     }
+
+
+
   @media(max-width:747px){
     .footer{
-      height: auto;
+      height: 600px;
       background-color: #F14C38;
       border: px solid black;
       
@@ -1839,7 +1858,7 @@ nav a:hover{
       width: 220px;
       position: relative;
       left:0;
-
+        margin-top: 20px;
     }
     .logoimg-footer{
       border: px solid black;
@@ -1874,11 +1893,12 @@ nav a:hover{
        
         position: relative;
         left: 0%;
+        top: 0px;
         color: white;
           border: px solid white;
           width: 200px;
           text-align: center;
-          margin-top: 20px;
+          margin-top:20px;
 
       }
       .menu-footer h3{
@@ -1907,6 +1927,7 @@ nav a:hover{
         border:px solid black;
         position: relative;
         left:0%;
+        top: 0px;
         text-align: center;
           color: white;
           border: px solid white;
@@ -1983,7 +2004,7 @@ nav a:hover{
 
   @media screen and (min-width:748px) and (max-width:1100px) {
     .footer{
-      height: auto;
+      height: 280px;
       width: 100%;
       background-color: #F14C38;
       
@@ -2005,15 +2026,19 @@ nav a:hover{
       position: relative;
       width: 200px;
       position: relative;
-      left: 40px;
       
+      position: relative;
+    left: 50%;
+        transform: translate(-50%);
+        border: px solid white;
+        width: fit-content;
     }
     .logoimg-footer{
       border: px solid black;
       width: 50px;
       position: relative;
       top: 20px;
-      left: 65px;
+      
     }
     .logo-footer h1{
       color: #fefefe;
@@ -2069,7 +2094,7 @@ nav a:hover{
           color: white;
           border: px solid white;
           width: 200px;
-          margin-top: 0px;
+          margin-top: 20px;
       }
       .menu-footer2 h3{
           font-family: 'Roboto';
