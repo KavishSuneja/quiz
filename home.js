@@ -49,16 +49,16 @@ window.addEventListener('scroll', reveal);
       
     console.log(em2);
  
-  ps2 = document.getElementById('pass').value;
-    if(ps2 =="dav123"){
-      effect.classList.remove('blur');
-      document.getElementById('login').style.display="none";
-    }
-  else{
-    ele55= document.getElementById('com').style.display="block";
+  // ps2 = document.getElementById('pass').value;
+  //   if(ps2 =="dav123"){
+  //     effect.classList.remove('blur');
+  //     document.getElementById('login').style.display="none";
+  //   }
+  // else{
+  //   ele55= document.getElementById('com').style.display="block";
      
      
-     }
+  //    }
    }
 
 
