@@ -25,11 +25,16 @@
 } */
 
 :root {
-    --bg: #eee;
+    --bg: #2e2929;
     --color: #F14C38;
     --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
 }
 
+body{
+    background-color: var(--bg);
+    border: px solid red;
+    height: 100%;
+}
 .wrapper {
     padding: 1.5rem 0;
     filter: url('#goo');
@@ -190,6 +195,8 @@ body{
     height: 50px;
     width: 50px;
     border: px solid black;
+    display: inline-block;
+
 }
 .co-name{
     height: 50px;
@@ -228,7 +235,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     border: px solid black;
-    width: fit-content;
+    
 }
 .un #username{
     font-family: 'Kanit',sans-serif;
@@ -290,9 +297,9 @@ body{
     position: relative;
     top: 40px;
     left: 200px;
-    position: relative;
     left: 90%;
     transform: translateX(-90%);
+    border: px solid red;
 }
 #rightside{
     background-color: #F1387B;
@@ -3228,4 +3235,34 @@ width: 90vw;
         justify-self: center;
         top: 45px;
     }
+}
+
+/* darkthemebutn */
+
+.dark{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 100000000;
+    border: px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+    color: #1F5EAB;
+}
+
+.fa-lightbulb{
+    font-size: 20px;
+    
+}
+
+.dark:hover{
+    background-color: #2d2929;
+    color: #FEFEFE;
+    transition: 0.5s;
+
 }
