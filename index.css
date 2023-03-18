@@ -364,13 +364,11 @@ body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
 }
 .logoimg{
     height: 50px;
     width: 50px;
     border: px solid black;
-    width: fit-content;
 }
 .co-name{
     height: 50px;
@@ -380,7 +378,7 @@ body{
     font-family: 'poppins', 'sans-serif';
     font-size: 30px;
     font-weight: 600;
-    width: fit-content;
+    
 }/*
 .un{
     position: relative;
@@ -443,11 +441,11 @@ body{
     position: relative;
     top: 30px;
     left: 200px;
-    display: ;
+    /* display: ; */
     position: relative;
     left: 90%;
     transform: translateX(-90%);
-    width: fit-content;
+    /* width: fit-content; */
     
 }
 } 
