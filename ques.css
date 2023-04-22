@@ -616,9 +616,9 @@ hr{
     }
     
     .btn-div{
-        border: px solid red;
+        border: 1px solid red;
         width: 100%;
-        height: 70px;
+        height: 0px;
         text-align: center;
         position: absolute;
         bottom: 0px;
